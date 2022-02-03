@@ -49,7 +49,7 @@ require_once("config.php");
 
 //echo $usuario;
 ////////////////////////////////////////////////////////////////////////////////
-
+//deletando um usuario
 $usuario = new Usuario();
 
 $usuario->loadById(30);
