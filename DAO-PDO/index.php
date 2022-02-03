@@ -1,0 +1,69 @@
+<?php
+
+require_once("config.php");
+
+//carrega um usuario 
+//$root = new Usuario();
+//$root->loadbyId(1);
+
+//echo $root;
+/////////////////////////////////////////////////////////////////////////////////////////////
+//carrega uma lista de ususarios
+//$lista = Usuario::getList();
+
+//echo json_encode($lista);
+//////////////////////////////////////////////////////////////////////////////////////////////////////
+
+//carrega uma lsita de usuarios buscando pelo login
+//$search = Usuario::search("br");
+//echo json_encode($search);
+
+////////////////////////////////////////////////////////////////////////////////////
+
+//carrega um usuario usando o login e a senha
+
+//$usuario = new Usuario();
+//$usuario->login("gustavo", "ruimdemira");
+
+//echo $usuario;
+
+///////////////////////////////////////////////////////////////////////////
+
+//insert = criando um novo ususario 
+//$aluno = new Usuario("aluno", "@lun0");
+
+//$aluno->setDeslogin("aluno");
+//$aluno->setDessenha("@lun0");
+
+//$aluno->insert();
+
+//echo $aluno;
+
+///////////////////////////////////////////////////////////////////////////////////////
+//Alterando um usuario
+//$usuario = new Usuario();
+
+//$usuario->loadById(10);
+
+//$usuario->update("professor", "dkhbfhdbfsf");
+
+//echo $usuario;
+////////////////////////////////////////////////////////////////////////////////
+
+$usuario = new Usuario();
+
+$usuario->loadById(30);
+
+$usuario->delete();
+
+echo $usuario;
+
+////////////////////////////////////////////////////////////////////////////////////
+//$sql = new Sql();
+
+//$usuarios = $sql->select("SELECT * FROM tb_usuarios");
+
+
+//echo json_encode($usuarios);
+
+?>
